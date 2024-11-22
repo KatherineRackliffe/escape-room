@@ -53,23 +53,23 @@
     <div class="container">
         <h1>Escape room!</h1>
         <input type="password" id="password" placeholder="Enter your password">
-        <button onclick="checkPassword()">Check</button>
+        <button onclick="checkPassword()">Check password</button>
         <p class="message" id="message"></p>
     </div>
 
     <script>
-        const password1 = "password123"; // Replace with your first password
-        const password2 = "letMeIn456"; // Replace with your second password
+        const password1 = "noodlefiendcat"; 
+        const password2 = "BDFCBFAFAF"; 
 
         function checkPassword() {
             const userInput = document.getElementById("password").value;
             const messageElement = document.getElementById("message");
 
             if (userInput === password1) {
-                messageElement.textContent = "Access Granted! (Password 1)";
+                messageElement.textContent = "Access Granted! (Part 1)";
                 messageElement.style.color = "green";
             } else if (userInput === password2) {
-                messageElement.textContent = "Access Granted! (Password 2)";
+                messageElement.textContent = "Access Granted! (Part 2)";
                 messageElement.style.color = "green";
             } else {
                 messageElement.textContent = "Access Denied!";
@@ -77,5 +77,8 @@
             }
         }
     </script>
+
+    <p> For the cards, download the NFC tools app for Android. </p>
+    <img src="/nfc.png" alt="NFC tools">
 </body>
 </html>
